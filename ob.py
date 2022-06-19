@@ -24,6 +24,7 @@ def unload_one_good(lc_link_on_good: str):
 
 def unload_catalog_bodo(lc_first_page_of_catalog:str, lc_filename:str):
         price = Price(lc_filename+'.csv')
+        pass
         lo_bodo = obWD()
         ll_list_links_on_goods = lo_bodo.Get_List_Of_Links_On_Goods_From_Catalog(lc_first_page_of_catalog)
         for g in ll_list_links_on_goods:
