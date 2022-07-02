@@ -1,2 +1,8 @@
 # created by virtualenv automatically
 chromedriver.exe
+__pycache__
+csvs
+login.ini
+geckodriver.exe
+prices
+database

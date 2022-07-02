@@ -1,0 +1,1 @@
+python ob.py dump "https://optom-brend.ru/zarina/zhenskaya-odezhda-optom" "g:\optom-brend.ru\csvs\zarina.csv" "1"

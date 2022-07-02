@@ -20,6 +20,7 @@ class obWD:
         #chrome_prefs["profile.managed_default_content_settings"] = {"images": 2}
         chrome_options.add_argument('--disable-gpu')
         chrome_options.add_argument("--disable-notifications")
+        chrome_options.binary_location = "C:\Program Files\Google\Chrome Beta\Application\chrome.exe"
         #chrome_options.add_argument('--headless')
         self.driver = webdriver.Chrome(chrome_options=chrome_options)
         self.driver.maximize_window()
@@ -93,24 +94,7 @@ class obWD:
 
 
 def LoginOB():
-    try:
-        wd = obWD()
-        print(1)
-    except:
-        try:
-            wd = obWD()
-            print(2)
-        except:
-            try:
-                wd = obWD()
-                print(3)
-            except:
-                try:
-                    wd = obWD()
-                    print(4)
-                except:
-                    pass
-    return wd
+    return obWD()
 #    if wd.driver.page_source.count('user773')>0:
 #        print('Авторизация прошла успешно')
 #        return wd
