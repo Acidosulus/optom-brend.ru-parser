@@ -1,0 +1,1 @@
+python ob.py dump "https://optom-brend.ru/ivashka_lets-go/detskaya-odezhda/malchiki" ".\csvs\Ivashka_boys.csv" "1"

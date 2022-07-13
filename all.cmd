@@ -1,0 +1,10 @@
+start Pelican_nalichii.cmd
+start SALE.cmd
+start visa_vis.cmd
+start Pelican_devochki.cmd
+start Pelican_malchiki.cmd
+start Pelican_malyshi.cmd
+start Pelican_shkola.cmd
+start Pelican_jenskoe.cmd
+start Pelican_mujskoe.cmd
+start Pelican_sumki.cmd

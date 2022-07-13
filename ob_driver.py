@@ -16,8 +16,8 @@ class obWD:
         chrome_options = webdriver.ChromeOptions()
         chrome_prefs = {}
         chrome_options.experimental_options["prefs"] = chrome_prefs
-        #chrome_prefs["profile.default_content_settings"] = {"images": 2}
-        #chrome_prefs["profile.managed_default_content_settings"] = {"images": 2}
+        chrome_prefs["profile.default_content_settings"] = {"images": 2}
+        chrome_prefs["profile.managed_default_content_settings"] = {"images": 2}
         chrome_options.add_argument('--disable-gpu')
         chrome_options.add_argument("--disable-notifications")
         chrome_options.binary_location = "C:\Program Files\Google\Chrome Beta\Application\chrome.exe"

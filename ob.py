@@ -234,6 +234,7 @@ if sys.argv[1] == 'dump':
         print('Товар: ', link, Fore.LIGHTWHITE_EX, ln_counter, '/', ln_total, Fore.RESET)
         if is_price_have_link(sys.argv[3], link) or is_price_have_link(sys.argv[3]+'in_stock.csv', link):
             print('Товар уже имеется в прайсе')
+            continue
         try:
             lo_good = ob_good(wd, link)
         except: continue
@@ -263,8 +264,8 @@ if sys.argv[1] == 'dump':
                                    '15',
                                    prepare_str(''),
                                    prepare_for_csv_non_list(lo_good.pictures),
-                                   prepare_for_csv_list(ll_sizes)
-                                   )
+                                   prepare_for_csv_list(ll_sizes),
+                                   link)
                 price.write_to_csv(sys.argv[3])
             else:
                 price_in_stock.add_good('',
@@ -274,8 +275,8 @@ if sys.argv[1] == 'dump':
                                '15',
                                prepare_str(''),
                                prepare_for_csv_non_list(lo_good.pictures),
-                               prepare_for_csv_list(ll_sizes)
-                               )
+                               prepare_for_csv_list(ll_sizes),
+                               link)
                 price_in_stock.write_to_csv(sys.argv[3]+'in_stock.csv')
 
     reverse_csv_price(sys.argv[3]+'in_stock.csv')

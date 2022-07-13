@@ -50,7 +50,7 @@ class ob_good:
 
         for i in range(0,ol.driver.page_source.count('<div class="slide g-al-center">')+1):
             picture = sx( sx(ol.driver.page_source,'<div class="slide g-al-center">', '</div>', i), '<a data-fancybox="gallery" href="', '">').replace(r'ru//', r'ru/').strip()
-            picture = poiskpers(picture.replace('https://','')).replace(' ','')
+            picture = poiskpers(picture.replace('https://','')).replace(' ','').replace('//','/')
             picture = ('https://' if len(picture) else '') + picture
             print(i, '-', picture)
             picture = picture
