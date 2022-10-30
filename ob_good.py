@@ -27,12 +27,15 @@ class ob_good:
         self.description= ''
         self.price = ''
         self.brand = ''
+        self.sale = False
         print(Fore.LIGHTGREEN_EX, 'Товар: ', Fore.LIGHTBLUE_EX, lc_link, Fore.RESET)
         self.source = ol.Get_HTML(lc_link)
         #ol.Write_To_File('good_debug.html')
         try: self.name = ol.driver.find_element(By.TAG_NAME, value = 'h1').text
         except: self.name = ''
         
+        if ol.driver.page_source.count('class="product-old-price')>0:
+            self.sale = True
         #"//*[contains(@class,'')]"
         #"//*[contains(@class,'')]"
 

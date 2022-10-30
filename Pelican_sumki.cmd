@@ -1,1 +1,1 @@
-python ob.py dump "https://optom-brend.ru/moskva/pelican/aksessuary" "g:\optom-brend.ru\csvs\Pelican_sumki.csv" "1"
+python ob.py dump "https://optom-brend.ru/pelican/aksessuary" "g:\optom-brend.ru\csvs\Pelican_sumki.csv" "1"
