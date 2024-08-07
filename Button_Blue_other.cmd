@@ -1,0 +1,1 @@
+python ob.py dump "https://optom-brend.ru/button-blue/aksessuary/aks_dlya_detey" "g:\optom-brend.ru\csvs\Button_Blue_other.csv" "1"
